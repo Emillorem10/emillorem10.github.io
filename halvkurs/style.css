@@ -1,0 +1,91 @@
+header,main,footer{
+    border: 4px solid rgb(140, 140, 170);
+    padding: 7%;
+    background-color: rgb(250, 246, 242);
+    margin: 3rem;
+
+
+}
+
+
+nav{
+
+    border: solid rgb(153, 149, 150);
+    padding: 5%;
+
+    display: grid;
+    gap: 20px;
+}
+
+main{
+
+    display: grid;
+
+    gap: 20px;
+    
+}
+
+.imgbox {
+
+    border: 4px solid rgb(99, 91, 91);
+    padding: 7%;
+    aspect-ratio: 1/1;
+    
+}
+
+img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textbox{
+    border: 5px solid rgb(104, 101, 102);
+    padding: 6%;
+    place-items: center;
+}
+
+
+#contact{
+    place-items: center;
+}
+
+
+
+
+
+@media(min-width: 650px){
+    nav{
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+
+
+    }
+    
+    .indexMain{
+
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+
+
+
+
+
+.hidden{
+    display: none;
+}
+
+
+
+
+
+
+.menuButton{
+    font-size: 3rem;
+}
+
+html{scroll-behavior: smooth;}
