@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chris6 Dojor</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Jost:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+
+  <header 
+  hx-get="komp/header.html" 
+  hx-trigger="load" 
+  hx-swap="outerHTML"
+  >
+  </header>
+
+  <!-- ===== HERO ===== -->
+
+  <section
+    hx-get="komp/hero.html"
+    hx-trigger="load"
+    hx-swap="outerHTML"
+    >
+  </section>
+
+  <!-- ===== PRODUKTER ===== -->
+
+  <section
+    hx-get="komp/main.html"
+    hx-trigger="load"
+    hx-swap="outerHTML"
+    >
+  </section>
+
+  <!-- ===== KONTAKT ===== -->
+
+  <section
+    hx-get="komp/kontakt.html"
+    hx-trigger="load"
+    hx-swap="outerHTML"
+    >
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+
+  <footer
+    hx-get="komp/footer.html"
+    hx-trigger="load"
+    hx-swap="outerHTML"
+    >
+  </footer>
+
+</body>
+
+</html>

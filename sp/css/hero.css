@@ -1,0 +1,32 @@
+.hero {
+  height: 80vh;
+  background: url("bilder/hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin: 20px 0;
+}
+
+.hero-sub {
+  letter-spacing: 2px;
+  font-size: 14px;
+}
